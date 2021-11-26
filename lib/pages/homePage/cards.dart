@@ -119,7 +119,7 @@ class _CardPageState extends State<CardPage> {
             ),
           ),
           const Padding(padding: EdgeInsets.symmetric(vertical: 20)),
-          Container(
+          Card(
             margin: const EdgeInsets.symmetric(
               vertical: 0,
             ),
