@@ -119,39 +119,33 @@ class _CardPageState extends State<CardPage> {
             ),
           ),
           const Padding(padding: EdgeInsets.symmetric(vertical: 20)),
-          Card(
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(30),
+          Container(
+            margin: const EdgeInsets.symmetric(
+              vertical: 0,
             ),
-            margin: const EdgeInsets.symmetric(horizontal: 30),
-            child: Container(
-              margin: const EdgeInsets.symmetric(
-                vertical: 0,
-              ),
-              child: Column(
-                children: <Widget>[
-                  ClipRRect(
-                    borderRadius: const BorderRadius.only(
-                      topLeft: Radius.circular(30),
-                      topRight: Radius.circular(30),
-                    ),
-                    child: Image.asset(
-                      'assets/images/hairStyle.jpg',
-                      width: 320,
-                    ),
+            child: Column(
+              children: <Widget>[
+                ClipRRect(
+                  borderRadius: const BorderRadius.only(
+                    topLeft: Radius.circular(30),
+                    topRight: Radius.circular(30),
                   ),
-                  const Padding(padding: EdgeInsets.symmetric(vertical: 10)),
-                  const Text(
-                    "Cabelo",
-                    style: TextStyle(
-                        fontFamily: 'shadowsIntoLight-regular',
-                        fontSize: 30,
-                        fontWeight: FontWeight.normal,
-                        decoration: TextDecoration.underline),
+                  child: Image.asset(
+                    'assets/images/hairStyle.jpg',
+                    width: 320,
                   ),
-                  const Padding(padding: EdgeInsets.symmetric(vertical: 10)),
-                ],
-              ),
+                ),
+                const Padding(padding: EdgeInsets.symmetric(vertical: 10)),
+                const Text(
+                  "Cabelo",
+                  style: TextStyle(
+                      fontFamily: 'shadowsIntoLight-regular',
+                      fontSize: 30,
+                      fontWeight: FontWeight.normal,
+                      decoration: TextDecoration.underline),
+                ),
+                const Padding(padding: EdgeInsets.symmetric(vertical: 10)),
+              ],
             ),
           ),
           const Padding(padding: EdgeInsets.symmetric(vertical: 20)),

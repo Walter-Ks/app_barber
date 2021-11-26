@@ -2,7 +2,7 @@
     package="com.example.app_barber">
    <application
         android:label="app_barber"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/laucher_icon">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
