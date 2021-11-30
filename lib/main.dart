@@ -1,3 +1,4 @@
+import 'package:app_barber/pages/homePage/cardsRow.dart';
 import 'package:app_barber/pages/homePage/homeScreen.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomeScreen(),
+      home: const CardsRow(),
     );
   }
 }
