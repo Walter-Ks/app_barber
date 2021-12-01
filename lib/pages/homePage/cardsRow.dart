@@ -1,10 +1,6 @@
-// ignore_for_file: file_names, prefer_function_declarations_over_variables, unused_local_variable, void_checks
+// ignore_for_file: file_names, prefer_function_declarations_over_variables,
 
 import 'package:flutter/material.dart';
-
-
- 
-
 
 class CardsRow extends StatefulWidget {
   const CardsRow({Key? key}) : super(key: key);
@@ -14,26 +10,12 @@ class CardsRow extends StatefulWidget {
 }
 
 class _CardsRowState extends State<CardsRow> {
-     List<String> list = [
-    'barbaECabelo.jpg',
-    'barberBarber.jpg',
-    'barberStyle.jpg',
-    'pigmentHair.jpg'
-  ];
-  get imgList => {
-  
-  for (var i = 0; i < list.length; i++) {
-      List<String> imgList = list[i];
-    
-  }
-  };
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(20),
+          padding: const EdgeInsets.only(left: 10),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
@@ -76,21 +58,19 @@ class _CardsRowState extends State<CardsRow> {
                   children: <Widget>[
                     SizedBox(
                       height: 150,
-                      width: MediaQuery.of(context).size.width - 40,
+                      width: MediaQuery.of(context).size.width - 18,
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
-                        itemCount: 10,
+                        itemCount: lista.length,
                         itemBuilder: (BuildContext context, int index) {
-                          return const Padding(
-                            padding: EdgeInsets.only(left: 25),
+                          return Padding(
+                            padding: const EdgeInsets.only(left: 25),
                             child: CircleAvatar(
                               radius: 62,
                               backgroundColor: Colors.red,
                               child: CircleAvatar(
                                 radius: 60,
-                                backgroundImage: AssetImage(
-                                  'assets/images/$imgList',
-                                ),
+                                backgroundImage: AssetImage(lista[index]),
                               ),
                             ),
                           );
@@ -107,3 +87,10 @@ class _CardsRowState extends State<CardsRow> {
     );
   }
 }
+
+List<String> lista = [
+  'assets/images/barbaECabelo.jpg',
+  'assets/images/barberBarber.jpg',
+  'assets/images/barberStyle.jpg',
+  'assets/images/pigmentHair.jpg'
+];

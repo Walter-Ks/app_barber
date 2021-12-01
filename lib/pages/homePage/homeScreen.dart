@@ -1,5 +1,6 @@
 // ignore_for_file: file_names
-import 'package:app_barber/pages/homePage/cards.dart';
+
+import 'package:app_barber/pages/homePage/cardsRow.dart';
 import 'package:app_barber/pages/userLogin/loginMain.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -38,15 +39,10 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ),
       body: Container(
-        color: Colors.grey.shade100,
-        height: MediaQuery.of(context).size.height,
-        padding: const EdgeInsets.symmetric(vertical: 10),
-        child: SingleChildScrollView(
-          child: Column(
-            children: const <Widget>[CardPage()],
-          ),
-        ),
-      ),
+          color: Colors.grey.shade100,
+          height: MediaQuery.of(context).size.height,
+          padding: const EdgeInsets.symmetric(vertical: 10),
+          child: const CardsRow()),
     );
   }
 }
