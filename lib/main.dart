@@ -1,4 +1,4 @@
-import 'package:app_barber/pages/homePage/homeScreen.dart';
+import 'package:app_barber/pages/homePage/HomePageMain.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,9 +15,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.indigo,
       ),
-      home: const HomeScreen(),
+      home: const RecentsMain(),
     );
   }
 }
